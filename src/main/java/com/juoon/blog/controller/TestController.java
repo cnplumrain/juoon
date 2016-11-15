@@ -12,7 +12,7 @@ public class TestController {
 	public String test(){
 		return "Hello,juoon！";
 	}
-	@RequestMapping("/")
+	@RequestMapping("/test2")
 	public String test2(ModelMap model){
 		model.addAttribute("time",new Date());
 		model.addAttribute("message","Hello,juoon!");
