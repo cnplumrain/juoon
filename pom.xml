@@ -5,7 +5,7 @@
 	<groupId>com.juoon</groupId>
 	<artifactId>blog</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>blog</name>
 	<url>http://maven.apache.org</url>
@@ -54,4 +54,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+    	<module>web</module>
+  	</modules>
 </project>
