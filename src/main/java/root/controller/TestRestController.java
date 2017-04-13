@@ -1,4 +1,4 @@
-package com.juoon.blog.controller;
+package root.controller;
 
 import java.util.Date;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
-	@RequestMapping("/test")
+public class TestRestController {
+	@RequestMapping("/rest")
 	public String test(){
 		return "Hello,juoon！";
 	}

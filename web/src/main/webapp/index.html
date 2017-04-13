@@ -1,46 +1,41 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>Welcome to Juoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
-	.background{
-		background-repeat: no-repeat;
-		background-size:cover;
-	}
-	
-	.trans{
-	
-		-webkit-transition: width 1s ease-in-out 0s;
-		-o-transition: width 1s ease-in-out 0s;
-		transition: width 1s ease-in-out 0s;
-	}
-	
-	
+.background {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.trans {
+	-webkit-transition: width 1s ease-in-out 0s;
+	-o-transition: width 1s ease-in-out 0s;
+	transition: width 1s ease-in-out 0s;
+}
 </style>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/three.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(window).mousemove(function(e){
-			if(e.screenX<=1){
-				//$("#cvs").hide();
-				$('#menuFrame').attr("width","200px");
-				$('#menuFrame').attr("class","trans");
-			}
-			if(e.screenX>200){
-				//$("#cvs").show();
-				$('#menuFrame').attr("width","0px");
-				$('#menuFrame').attr("class","trans");
-			}
-		});	
-	});
-	
-</script>
+<!-- 引入 Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ 　　		 <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 </head>
-<body class="background" background="img/sky.jpg" style="color:#ffd700 ;filter:alpha(opacity=20);background-size: 100% 100%; -o-background-size: 100% 100%;-moz-background-size: 100% 100%; -webkit-background-size: 100% 100%;">
-	<iframe scrolling="no" id="menuFrame" src="menu.html"  style="border:none;width:10%;float:left;margin:0;position:relative;"></iframe>
-	<iframe scrolling="no" id="contentFrame" src=""  style="border:none;width:90%;height:1000px;margin:0;position:relative;"></iframe>
-	
+<body class="background" background="img/sky.jpg">
+	<div align="center" style="color:#cc6699">
+		<h1>Dong Homgming</h1>
+		<h2>You are a PRETTY GIRL!</h2>
+		<h2>I like You!</h2>
+		<h2>Can You like me too!</h2>
+	</div>
+	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- 包括所有已编译的插件 -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

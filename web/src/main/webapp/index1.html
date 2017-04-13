@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.background{
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	
+	.trans{
+	
+		-webkit-transition: width 1s ease-in-out 0s;
+		-o-transition: width 1s ease-in-out 0s;
+		transition: width 1s ease-in-out 0s;
+	}
+	
+	
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).mousemove(function(e){
+			if(e.screenX<=1){
+				//$("#cvs").hide();
+				$('#menuFrame').attr("width","200px");
+				$('#menuFrame').attr("class","trans");
+			}
+			if(e.screenX>200){
+				//$("#cvs").show();
+				$('#menuFrame').attr("width","0px");
+				$('#menuFrame').attr("class","trans");
+			}
+		});	
+	});
+	
+</script>
+</head>
+<body class="background" background="img/sky.jpg" style="color:#ffd700 ;filter:alpha(opacity=20);background-size: 100% 100%; -o-background-size: 100% 100%;-moz-background-size: 100% 100%; -webkit-background-size: 100% 100%;">
+	<iframe scrolling="no" id="menuFrame" src="menu.html"  style="border:none;width:10%;float:left;margin:0;position:relative;"></iframe>
+	<iframe scrolling="no" id="contentFrame" src=""  style="border:none;width:90%;height:1000px;margin:0;position:relative;"></iframe>
+	
+</body>
+</html>

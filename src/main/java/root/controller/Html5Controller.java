@@ -1,4 +1,4 @@
-package com.juoon.blog.controller;
+package root.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
